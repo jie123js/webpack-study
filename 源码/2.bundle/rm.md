@@ -1,0 +1,22 @@
+{
+    "rm-js-comment.replacer": {
+      "babel_runtime_corejs3_":"",
+      "__WEBPACK":"",
+      "__webpack_handle_async_dependencies__":"async_dependencies",
+      "IMPORTED_MODULE_":"",
+      "__WEBPACK_DEFAULT_EXPORT__":"DEFAULT_EXPORT",
+      "__webpack_exports__":"exports",
+      "__unused_webpack_module":"module",  
+      "__WEBPACK_EXTERNAL_MODULE_":"EXTERNAL_MODULE_",
+      "__WEBPACK_DYNAMIC_EXPORT__":"DYNAMIC_EXPORT",
+      "__system_context__":"system_context",
+      "__webpack_require__":"require",
+      "__webpack_module_cache__":"cache",
+      "__webpack_modules__":"modules",
+      "__WEBPACK_IMPORTED_MODULE_":"_IMPORTED_MODULE_",
+      "/*#__PURE__*/":"",
+      "___EXPOSE_LOADER_IMPORT___":"EXPOSE_IMPORT",
+      "___EXPOSE_LOADER_GET_GLOBAL_THIS___":"GET_GLOBAL_THIS",
+      "___EXPOSE_LOADER_GLOBAL_THIS___":"GLOBAL_THIS"
+    }
+}

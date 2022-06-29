@@ -1,0 +1,34 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Your Name <you@example.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/vite-project.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.nlark.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:zhufengpeixun/zhufengwebpack202202.git"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vue/compiler-sfc": "^3.2.31",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "vite": "^2.8.6",
+    "vue": "^3.2.31"
+  }
+}

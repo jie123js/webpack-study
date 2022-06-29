@@ -1,0 +1,25 @@
+{
+  "name": "16.viteplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/plugin-transform-typescript": "^7.16.8",
+    "@rollup/pluginutils": "^4.2.0",
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vitejs/plugin-vue-jsx": "^1.3.8",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "vite": "^2.8.6"
+  },
+  "dependencies": {
+    "hash-sum": "^2.0.0",
+    "vue": "^3.2.31"
+  }
+}

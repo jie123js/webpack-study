@@ -1,0 +1,494 @@
+
+}
+renderChunk
+banner
+intro
+
+import('./msg-eabf68dc.js').then(res => console.log(res.default));
+
+/**
+ *
+ * @param {*} filename  ./msg
+ * @param {*} url http://127.0.0.1:8080/index.js
+ */
+function dynamicImportPolyfill(filename, url) {
+  return new Promise(resolve => {
+    //http://127.0.0.1:8080/msg.js http://127.0.0.1:8080/msg-72e24c7f.js
+    const resourceUrl = new URL(filename, url).href;
+    let script = document.createElement('script');
+    script.onload = () => {
+      debugger
+      resolve(window.mod);
+    };
+    script.type = 'module';
+    /*  const blob = new Blob([
+       `import * as mod from ${JSON.stringify(resourceUrl)};`,
+       "window.mod = mod;"
+     ], { type: 'text/javascript' });
+      script.src = URL.createObjectURL(blob)
+      */
+    script.innerHTML = `
+    import * as mod from ${JSON.stringify(resourceUrl)};
+    window.mod = mod;
+    `;
+    document.head.appendChild(script);
+  });
+}
+console.log(dynamicImportPolyfill);
+
+
+
+outro
+
+footer {
+  exports: [],
+  facadeModuleId: 'C:\\aproject\\zhufengwebpack202202\\15.rollupplugin\\src\\index.js',
+  isDynamicEntry: false,
+  isEntry: true,
+  isImplicitEntry: false,
+  modules: [Object: null prototype] {
+    'C:\\aproject\\zhufengwebpack202202\\15.rollupplugin\\src\\index.js': {
+      code: [Getter],
+      originalLength: 949,
+      removedExports: [],
+      renderedExports: [],
+      renderedLength: 951
+    }
+  },
+  name: [Getter],
+  type: 'chunk',
+  code: undefined,
+  dynamicImports: [ 'msg-eabf68dc.js' ],
+  fileName: 'index.js',
+  implicitlyLoadedBefore: [],
+  importedBindings: {},
+  imports: [],
+  map: undefined,
+  referencedFiles: []
+} {
+  amd: { autoId: false, define: 'define', id: undefined },
+  assetFileNames: 'assets/[name]-[hash][extname]',
+  banner: [Function (anonymous)],
+  chunkFileNames: '[name]-[hash].js',
+  compact: false,
+  dir: 'dist',
+  dynamicImportFunction: undefined,
+  entryFileNames: '[name].js',
+  esModule: true,
+  exports: 'auto',
+  extend: false,
+  externalLiveBindings: true,
+  file: undefined,
+  footer: [Function (anonymous)],
+  format: 'es',
+  freeze: true,
+  generatedCode: {
+    arrowFunctions: false,
+    constBindings: false,
+    objectShorthand: false,
+    reservedNamesAsProps: false,
+    symbols: false
+  },
+  globals: {},
+  hoistTransitiveImports: true,
+  indent: true,
+  inlineDynamicImports: false,
+  interop: [Function (anonymous)],
+  intro: [Function (anonymous)],
+  manualChunks: {},
+  minifyInternalExports: true,
+  name: undefined,
+  namespaceToStringTag: false,
+  noConflict: false,
+  outro: [Function (anonymous)],
+  paths: {},
+  plugins: [],
+  preferConst: false,
+  preserveModules: false,
+  preserveModulesRoot: undefined,
+  sanitizeFileName: [Function: sanitizeFileName],
+  sourcemap: false,
+  sourcemapExcludeSources: false,
+  sourcemapFile: undefined,
+  sourcemapPathTransform: undefined,
+  strict: true,
+  systemNullSetters: false,
+  validate: false
+}
+renderChunk
+banner
+intro
+
+var msg = 'msg4';
+
+export { msg as default };
+
+
+
+outro
+
+footer {
+  exports: [ 'default' ],
+  facadeModuleId: 'C:\\aproject\\zhufengwebpack202202\\15.rollupplugin\\src\\msg.js',
+  isDynamicEntry: true,
+  isEntry: false,
+  isImplicitEntry: false,
+  modules: [Object: null prototype] {
+    'C:\\aproject\\zhufengwebpack202202\\15.rollupplugin\\src\\msg.js': {
+      code: [Getter],
+      originalLength: 22,
+      removedExports: [],
+      renderedExports: [Array],
+      renderedLength: 17
+    }
+  },
+  name: [Getter],
+  type: 'chunk',
+  code: undefined,
+  dynamicImports: [],
+  fileName: 'msg-eabf68dc.js',
+  implicitlyLoadedBefore: [],
+  importedBindings: {},
+  imports: [],
+  map: undefined,
+  referencedFiles: []
+} {
+  amd: { autoId: false, define: 'define', id: undefined },
+  assetFileNames: 'assets/[name]-[hash][extname]',
+  banner: [Function (anonymous)],
+  chunkFileNames: '[name]-[hash].js',
+  compact: false,
+  dir: 'dist',
+  dynamicImportFunction: undefined,
+  entryFileNames: '[name].js',
+  esModule: true,
+  exports: 'auto',
+  extend: false,
+  externalLiveBindings: true,
+  file: undefined,
+  footer: [Function (anonymous)],
+  format: 'es',
+  freeze: true,
+  generatedCode: {
+    arrowFunctions: false,
+    constBindings: false,
+    objectShorthand: false,
+    reservedNamesAsProps: false,
+    symbols: false
+  },
+  globals: {},
+  hoistTransitiveImports: true,
+  indent: true,
+  inlineDynamicImports: false,
+  interop: [Function (anonymous)],
+  intro: [Function (anonymous)],
+  manualChunks: {},
+  minifyInternalExports: true,
+  name: undefined,
+  namespaceToStringTag: false,
+  noConflict: false,
+  outro: [Function (anonymous)],
+  paths: {},
+  plugins: [],
+  preferConst: false,
+  preserveModules: false,
+  preserveModulesRoot: undefined,
+  sanitizeFileName: [Function: sanitizeFileName],
+  sourcemap: false,
+  sourcemapExcludeSources: false,
+  sourcemapFile: undefined,
+  sourcemapPathTransform: undefined,
+  strict: true,
+  systemNullSetters: false,
+  validate: false
+}
+created dist in 71ms
+
+C:\aproject\zhufengwebpack202202\15.rollupplugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
